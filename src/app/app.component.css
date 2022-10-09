@@ -1,0 +1,377 @@
+/*scroll-to-top*/
+
+.scrolltop{
+  outline: none;
+  border: 0;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  /*padding: 8px;*/
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  /*right: 30px;
+  bottom: 30px;*/
+  top: 87%;
+  left: 95%;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, .1),0 2px, 4px, -1px rgba(0, 0, 0, .06);
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+  animation: pulse-anim 1.5s linear infinite;
+}
+.scrolltop.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrolltop img{
+  width: 110%;
+}
+
+
+
+h2{
+  font-family: 'Sorts Mill Goudy', serif;
+}
+p{
+  font: 400 1.6em/2rem 'Sorts Mill Goudy', serif;
+  margin-bottom: 0px;
+
+}
+.contenedor{
+  margin: 1rem 5rem;
+}
+
+.arriba{
+  text-align: center;
+
+}
+.arriba img{
+  width: 100%;
+  height: 110px;
+}
+.abajo{
+  text-align: center;
+}
+.abajo img {
+  width: 100%;
+}
+.capa1{
+  content: "";
+  min-height: 70vh;
+  border-radius: 3rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: radial-gradient(farthest-side at 50%,  #123b409e, #123B40);
+  opacity: 1;
+}
+.capa img{
+  width: 25rem;
+  height: 100%;
+  padding: 16px 37px;
+  display: block;
+  margin: 0px auto;
+}
+.encabezado{
+  padding: .7rem;
+  color: aliceblue;
+}
+.encabezado p{
+  margin: 0 auto;
+  display: table;
+
+}
+/*
+header
+*/
+
+header{
+  padding: 10px 100px;
+  background-color: #123B40;
+  border-radius: 3rem 3rem 0 0;
+  box-sizing: border-box;
+}
+.contenido-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: aliceblue;
+}
+.barra {
+  padding-top: .3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.barra p span{
+  font-family: 'Times New Roman', Times, serif;
+}
+.barra p{
+  font-family: 'Times New Roman', Times, serif;
+}
+.navegacion {
+  display: block;
+}
+section{
+  width: 100%;
+  height: 40vh;
+}
+div .sec1{
+  border-radius: 0 0 3rem 3rem ;
+  background-image: url(../assets/Fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+div section.capa{
+  content: "";
+  min-height: 50vh;
+  border-radius: 0 0 3rem 3rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: radial-gradient(farthest-side at 50%,  #123b409e, #123B40);
+  opacity: 1;
+  z-index: 0;
+}
+section.sec2{
+  margin: 2rem 0;
+  padding: 40px;
+  box-sizing: border-box;
+  height: auto;
+  border: 5px solid #123B40;
+  border-radius: 2rem;
+}
+section.sec2 h2 p{
+  margin: 0;
+  padding: 0;
+}
+/** background: #F2CC85; **/
+section.sec3{
+
+  background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background: #F2CC85;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+nav ul{
+  display: flex;
+  margin: 0 auto;
+  padding: 0 100px;
+  justify-content: center;
+  align-items: center;
+
+
+}/*float: right;*/
+.logo{
+  width: 50px;
+  height: 50px;
+
+ }
+nav ul li{
+  list-style: none;
+}
+nav ul img{
+  width: 3rem;
+  height: 3rem;
+}
+nav ul li a{
+  display: block;
+  color: #a71117;
+  padding: 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #123B40;
+}
+
+.cont{
+  position: fixed;
+  top: -10%;
+  bottom: 0;
+  right: 0;
+  left: 94%;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  background-color:#B47D1C ;
+  margin: auto;
+  border-radius: 50%;
+  animation: pulse-anim 1.5s linear infinite;
+  z-index: 100 !important;
+  animation-name: pulse-anim;
+}
+.whatsap img{
+  width: 60px;
+}
+
+.cont2{
+  position: fixed;
+  top: 13%;
+  bottom: 0;
+  right: 0;
+  left: 94%;
+  height: 60px;
+  width: 60px;
+  background-color: #B47D1C;
+  margin: auto;
+  border-radius: 50%;
+  animation: pulse-anim 1.5s linear infinite;
+  z-index: 100!important;
+}
+.telefono img{
+  width: 60px;
+}
+
+@keyframes pulse-anim {
+  0% {
+    box-shadow: #B47D1C 0 0 0 0;
+  }
+  100% {
+    box-shadow: rgba(67, 224, 74, 0) 0 0 0 10px;
+  }
+}
+
+
+
+@media (max-width:920px) {
+  .scrolltop{
+    outline: none;
+    border: 0;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    /*padding: 8px;*/
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /*right: 30px;
+    bottom: 30px;*/
+    top: 89%;
+    left: 87%;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, .1),0 2px, 4px, -1px rgba(0, 0, 0, .06);
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+  }
+
+  .contenedor{
+    margin: 0rem 0rem;
+  }
+  header{
+    padding: 10px 10px;
+    background-color: #123B40;
+    border-radius: 3rem 3rem 0 0;
+    box-sizing: border-box;
+  }
+  .capa img{
+    width: 18rem;
+    height: 100%;
+    padding: 16px 37px;
+    display: block;
+   margin: 0px auto;
+  }
+  .barra {
+    display: block;
+  }
+  section.sec2{
+    padding: 10px;
+  }
+  .cont{
+    position: fixed;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    left: 87%;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color:#B47D1C ;
+    margin: auto;
+    border-radius: 50%;
+    animation: pulse-anim 1.5s linear infinite;
+    z-index: 1;
+    animation-name: pulse-anim;
+  }
+  .whatsap img{
+    width: 40px;
+  }
+
+  .cont2{
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    right: 0;
+    left: 87%;
+    height: 40px;
+    width: 40px;
+    background-color: #B47D1C;
+    margin: auto;
+    border-radius: 50%;
+    animation: pulse-anim 1.5s linear infinite;
+    z-index: 1;
+  }
+  .telefono img{
+    width: 40px;
+  }
+  .whatsap img{
+    width: 40px;
+  }
+
+  .arriba{
+    display: none;
+  }
+  .abajo{
+    display: none;
+  }
+  .izquierdo{
+    display: none;
+  }
+  .derecha{
+    display: none;
+  }
+}
+
+/* scrol-top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+ }
+ .show-scrollTop {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  border-radius: 50%;
+  background-color: hotpink;
+
+ }
